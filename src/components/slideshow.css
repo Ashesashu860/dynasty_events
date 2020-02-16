@@ -1,0 +1,47 @@
+.slideshow_wrapper {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.slide-appear {
+  opacity: 0;
+}
+.slide-appear.slide-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms linear;
+}
+
+.image {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* enter */
+.slide-enter {
+  transform: translateX(100%);
+}
+.slide-enter.slide-enter-active {
+  transform: translateX(0);
+  transition: transform 1000ms;
+}
+
+/* exit */
+.slide-exit {
+  transform: translateX(0);
+}
+.slide-exit.slide-exit-active {
+  transform: translateX(-100%);
+  transition: transform 1000ms;
+}
+.slide-exit-done {
+  transform: translateX(-100%);
+}
