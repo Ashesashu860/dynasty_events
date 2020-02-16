@@ -21,7 +21,7 @@ const Navigation = ({ dispatch }) => {
             dispatch(changeRoute("products"));
           }}
         >
-          PRODUCTS
+          ITEMS
         </NavLink>
         <NavLink
           to="/orders"
